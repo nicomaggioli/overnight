@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<style id="__cursor_css__">html,body,*,*::before,*::after,a,a *,button,button *,input,textarea,select,video,iframe{cursor:none!important}[data-framer-cursor],[data-framer-name*="ursor"],.framer-rIf2G,[class*="framer-rIf2G"],[class*="framer-wfhf46"]{display:none!important;visibility:hidden!important;opacity:0!important}#__cursor__,#__cursor__#__cursor__{position:fixed!important;top:0!important;left:0!important;width:42px!important;height:42px!important;pointer-events:none!important;z-index:2147483647!important;transform:translate(-50%,-50%)!important;background-image:url(/_local_media/custom-cursor-rotated.png)!important;background-size:contain!important;background-repeat:no-repeat!important;background-position:center!important;will-change:top,left;display:block!important;visibility:visible!important;opacity:1!important;}</style>
+<script id="__cursor_js__">(function(){var el=null,lx=0,ly=0;try{var sx=sessionStorage.getItem('__cx__');var sy=sessionStorage.getItem('__cy__');if(sx!==null){lx=parseFloat(sx);ly=parseFloat(sy);}}catch(e){}function create(){if(el)return;el=document.createElement('div');el.id='__cursor__';el.style.setProperty('left',lx+'px','important');el.style.setProperty('top',ly+'px','important');}function mount(){create();var parent=document.documentElement||document.body;if(!parent)return;if(!document.getElementById('__cursor__')){parent.appendChild(el);}}function stripFramerCursor(){var roots=document.querySelectorAll('[data-framer-cursor]');for(var i=0;i<roots.length;i++){roots[i].removeAttribute('data-framer-cursor');}var fc=document.querySelectorAll('.framer-rIf2G,[class*="framer-rIf2G"],[class*="framer-wfhf46"]');for(var i=0;i<fc.length;i++){fc[i].style.setProperty('display','none','important');}}mount();stripFramerCursor();document.addEventListener('DOMContentLoaded',function(){mount();stripFramerCursor();});window.addEventListener('load',function(){mount();stripFramerCursor();});setInterval(function(){mount();stripFramerCursor();},80);if(window.MutationObserver){var mo=new MutationObserver(function(){stripFramerCursor();mount();});try{mo.observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['data-framer-cursor','class','style']});}catch(e){}}var saveTick=0;function move(e){lx=e.clientX;ly=e.clientY;if(el){el.style.setProperty('left',lx+'px','important');el.style.setProperty('top',ly+'px','important');}saveTick++;if(saveTick%3===0){try{sessionStorage.setItem('__cx__',lx);sessionStorage.setItem('__cy__',ly);}catch(e){}}}document.addEventListener('pointermove',move,true);document.addEventListener('mousemove',move,true);document.addEventListener('pointerover',move,true);document.addEventListener('pointerdown',function(e){try{sessionStorage.setItem('__cx__',e.clientX);sessionStorage.setItem('__cy__',e.clientY);}catch(err){}mount();stripFramerCursor();move(e);},true);document.addEventListener('click',function(e){try{sessionStorage.setItem('__cx__',e.clientX);sessionStorage.setItem('__cy__',e.clientY);}catch(err){}mount();stripFramerCursor();move(e);},true);window.addEventListener('beforeunload',function(){try{sessionStorage.setItem('__cx__',lx);sessionStorage.setItem('__cy__',ly);}catch(e){}});})()</script>
+<script id="__link_prefetch__">(function(){var prefetched={};function prefetch(url){if(prefetched[url])return;prefetched[url]=1;var l=document.createElement('link');l.rel='prefetch';l.href=url;document.head.appendChild(l);}document.addEventListener('pointerenter',function(e){var a=e.target&&e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href');if(!h||h.charAt(0)==='#'||h.indexOf('javascript:')===0||a.target==='_blank')return;prefetch(h);},true);})()</script>
+
+
+
+
+
+
+
+
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>overnightmaca — portal</title>
+  <link href="_ext/framerusercontent.com/images/SE2TfCYfRMhsephVGGiJGazI87U.png" rel="icon" media="(prefers-color-scheme: light)">
+  <link href="_ext/framerusercontent.com/images/9J9V0lTnvwC16TvvWsesFEUN91E.png" rel="icon" media="(prefers-color-scheme: dark)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    @keyframes pageFadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    html, body {
+      /* Hand-drawn paper texture covers the entire viewport */
+      background: #e4e0d3 url('_local_media/8ball-bg.jpg') center/cover no-repeat fixed;
+      color: #1a1410;
+      font-family: "Jost", -apple-system, "Helvetica Neue", sans-serif;
+      min-height: 100vh;
+      overflow: hidden;
+      user-select: none;
+      -webkit-font-smoothing: antialiased;
+      touch-action: manipulation;
+      animation: pageFadeIn 0.6s ease;
+    }
+    .stage {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.75rem;
+      padding: 2rem;
+    }
+    .title {
+      display: block;
+      width: min(60vw, 460px);
+      height: auto;
+    }
+    .hint {
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #6b6155;
+      text-align: center;
+    }
+
+    /* ---------- Magic 8 Ball (hand-drawn) ---------- */
+    .ball-wrap {
+      position: relative;
+      width: min(72vw, 460px);
+      aspect-ratio: 1 / 1;
+      cursor: pointer;
+    }
+    .ball-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+    .ball-front { opacity: 1; }
+    .ball-back  { opacity: 0; }
+    .ball-wrap.revealed .ball-front { opacity: 0; }
+    .ball-wrap.revealed .ball-back  { opacity: 1; }
+    /* Centering layer — flexbox, never uses transform so animations can't break it */
+    .answer-pos {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 6%; /* nudge down toward the bottom of the triangle */
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    /* The shake target — gets transform animation, can't fight centering */
+    .answer-shake {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    /* The text itself — hand-drawn font with a slight off-axis tilt */
+    .answer {
+      display: inline-block;
+      text-align: center;
+      font-family: "Kalam", "Bradley Hand", "Marker Felt", cursive;
+      font-weight: 700;
+      font-size: clamp(22px, 3.6vw, 40px);
+      letter-spacing: 0.01em;
+      text-transform: lowercase;
+      color: #f4ecd0;
+      line-height: 0.95;
+      transform: rotate(-2.5deg);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+      max-width: 70%;
+    }
+    .ball-wrap.revealed .answer-pos { opacity: 1; pointer-events: auto; cursor: pointer; }
+
+    /* Hand-drawn shake — pencil sketch jitter, slight rotation, no smooth easing */
+    @keyframes scribbleShake {
+      0%   { transform: translate(0, 0) rotate(0); }
+      8%   { transform: translate(-9px, -3px) rotate(-2.2deg); }
+      16%  { transform: translate(8px, 4px) rotate(1.8deg); }
+      24%  { transform: translate(-7px, 5px) rotate(-1.5deg); }
+      32%  { transform: translate(9px, -4px) rotate(2.4deg); }
+      40%  { transform: translate(-8px, 3px) rotate(-1.2deg); }
+      48%  { transform: translate(7px, 5px) rotate(1.6deg); }
+      56%  { transform: translate(-6px, -4px) rotate(-1.8deg); }
+      64%  { transform: translate(5px, 3px) rotate(1.2deg); }
+      72%  { transform: translate(-4px, 2px) rotate(-0.8deg); }
+      80%  { transform: translate(3px, -2px) rotate(0.6deg); }
+      88%  { transform: translate(-2px, 1px) rotate(-0.3deg); }
+      100% { transform: translate(0, 0) rotate(0); }
+    }
+    .ball-wrap.shaking .ball-front,
+    .ball-wrap.shaking .ball-back { animation: scribbleShake 0.85s steps(8, end); }
+    .ball-wrap.shaking .answer-shake { animation: scribbleShake 0.85s steps(8, end); }
+
+    .corner-mark {
+      position: fixed;
+      bottom: 1.25rem;
+      right: 1.5rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #8a7f6e;
+    }
+    .reset {
+      position: fixed;
+      bottom: 1.25rem;
+      left: 1.5rem;
+      background: transparent;
+      border: 1px solid #8a7f6e;
+      color: #4a4035;
+      font-family: inherit;
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 8px 14px;
+      border-radius: 999px;
+      transition: all 0.25s;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .reset.visible { opacity: 1; pointer-events: auto; }
+    .reset:hover { color: #f8c533; border-color: #f8c533; }
+  </style>
+  
+  
+
+  
+
+  
+
+  
+</head>
+<body>
+  <div class="stage">
+    <img class="title" src="_local_media/macazine-logo.png" alt="macazine" />
+    <div class="hint">ask a question · tap the ball to shake</div>
+    <div class="ball-wrap" id="ballWrap">
+      <img class="ball-img ball-front" src="_local_media/8ball-front.png" alt="magic 8 ball" />
+      <img class="ball-img ball-back"  src="_local_media/8ball-back.png"  alt="" />
+      <div class="answer-pos"><div class="answer-shake"><div class="answer" id="answerText"></div></div></div>
+    </div>
+  </div>
+  <button class="reset" id="reset">Reset</button>
+  <div class="corner-mark">Issue 01</div>
+
+  <script>
+  // ----- Magic 8 Ball -----
+  const PAGES = [
+    { label: 'Home',       href: 'home/' },
+    { label: 'Bio',        href: 'bio/' },
+    { label: 'The Zine',   href: 'the-zine/' },
+    { label: 'Overnight',  href: 'overnight/' },
+    { label: 'Contribute', href: 'contribute/' },
+    { label: 'Contact',    href: 'contact/' },
+    { label: 'Instagram',  href: 'https://instagram.com/maca.zine', external: true },
+  ];
+
+  const ballWrap = document.getElementById('ballWrap');
+  const answerText = document.getElementById('answerText');
+  const resetBtn = document.getElementById('reset');
+  let currentPage = null;
+  let shaking = false;
+
+  function pickRandom() {
+    let pool = PAGES;
+    if (currentPage) pool = PAGES.filter(p => p !== currentPage);
+    return pool[Math.floor(Math.random() * pool.length)];
+  }
+
+  function navigateTo(href, external) {
+    document.body.style.transition = 'opacity 0.35s ease';
+    document.body.style.opacity = '0';
+    setTimeout(() => {
+      if (external) window.open(href, '_blank');
+      else window.location.href = href;
+    }, 350);
+  }
+
+  function shake() {
+    if (shaking) return;
+    shaking = true;
+    ballWrap.classList.remove('revealed');
+    ballWrap.classList.add('shaking');
+    setTimeout(() => {
+      currentPage = pickRandom();
+      answerText.textContent = currentPage.label;
+    }, 350);
+    setTimeout(() => {
+      ballWrap.classList.remove('shaking');
+      ballWrap.classList.add('revealed');
+      resetBtn.classList.add('visible');
+      shaking = false;
+    }, 700);
+  }
+
+  ballWrap.addEventListener('click', e => {
+    if (ballWrap.classList.contains('revealed') && e.target.closest('.answer')) {
+      navigateTo(currentPage.href, currentPage.external);
+      return;
+    }
+    shake();
+  });
+
+  resetBtn.addEventListener('click', () => {
+    ballWrap.classList.remove('revealed', 'shaking');
+    resetBtn.classList.remove('visible');
+    currentPage = null;
+    answerText.textContent = '';
+  });
+  </script>
+</body>
+</html>

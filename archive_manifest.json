@@ -1,0 +1,30 @@
+{
+  "startUrl": "https://overnightmaca.framer.website/",
+  "timestamp": "2026-04-09T02:41:17.637Z",
+  "counts": {
+    "pages": 6,
+    "assets": 40
+  },
+  "capsHit": [],
+  "errors": [
+    {
+      "time": "2026-04-09T02:41:13.830Z",
+      "url": "https://kmlhvwkvjeklnqzocyaq.supabase.co/storage/v1/object/sign/Overnight/Overnight_Vid.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MjU1MzI2MS1hZTNmLTQwNjAtOTdkYi0zNjdiOGExYTNiMjIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJPdmVybmlnaHQvT3Zlcm5pZ2h0X1ZpZC5tcDQiLCJpYXQiOjE3NjUyNDA0NjIsImV4cCI6MzE1NTM2NTI0MDQ2Mn0.VyTZIOsW8wE9tPDhH8LxnrZJ0ApP4Ekvr-lGDDpISwY",
+      "stage": "fetch-asset",
+      "message": "Failed to fetch"
+    },
+    {
+      "time": "2026-04-09T02:41:14.113Z",
+      "url": "https://kmlhvwkvjeklnqzocyaq.supabase.co/storage/v1/object/sign/Cont2/Edit_1.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MjU1MzI2MS1hZTNmLTQwNjAtOTdkYi0zNjdiOGExYTNiMjIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJDb250Mi9FZGl0XzEubXA0IiwiaWF0IjoxNzY1OTMyMjY4LCJleHAiOjMxNTUzNjU5MzIyNjh9.0WJlDOUikDizOQ6_0CLVH3qmQ_xVegD18muzEpCa1Q0",
+      "stage": "fetch-asset",
+      "message": "Failed to fetch"
+    },
+    {
+      "time": "2026-04-09T02:41:14.551Z",
+      "url": "https://kmlhvwkvjeklnqzocyaq.supabase.co/storage/v1/object/sign/Contribute/Contribute.m4v?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85MjU1MzI2MS1hZTNmLTQwNjAtOTdkYi0zNjdiOGExYTNiMjIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJDb250cmlidXRlL0NvbnRyaWJ1dGUubTR2IiwiaWF0IjoxNzY1OTE3NDk2LCJleHAiOjMxNzEyNTkxNzQ5Nn0.F6wJrsQDT0079ndkbNueVebkl8F_gtXn3ksE2tjXiSI",
+      "stage": "fetch-asset",
+      "message": "Failed to fetch"
+    }
+  ],
+  "skippedUrls": []
+}

@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Original pre-compression assets
+_local_media/*.orig.*
+_local_media/8ball.png
+
+# Redundant source files
+_local_media/framer_MLWPbW1dUQawJLhhun3dBwpgJak.mp4
+_local_media/homebg.jpg
+_local_media/macazine-logo.jpg
